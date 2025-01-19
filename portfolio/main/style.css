@@ -1,0 +1,131 @@
+*{
+    box-sizing: border-box;
+    font-size: 12px;
+}
+
+:root{
+    --base-color: #f8f8f8;
+    --base-variant: #e8e9ed;
+    --text-color: #111528;
+    --secondary-text: #232738;
+    --primary-color: #3a435d;
+    --accent-color: #0071ff;
+    --font-small: 12px;
+}
+.darkmode{
+    --base-color: #070b1d;
+    --base-variant: #101425;
+    --text-color: #ffffff;
+    --secondary-text: #a4a5b8;
+    --primary-color: #3a435d;
+    --accent-color: #0071ff;
+    --darkcard: #16575c;
+
+}
+
+#theme-switch{
+    float: left;
+    height: 50px;
+    width: 50px;
+    padding: 0;
+    border-radius: 50%;
+    background-color: var(--base-variant);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#theme-switch svg{
+    fill: var(--primary-color);
+}
+
+#theme-switch svg:last-child{
+    display: none;
+}
+
+.darkmode #theme-switch svg:first-child{
+    display: none;
+}
+
+.darkmode #theme-switch svg:last-child{
+    display: block;
+}
+/*COLOR WHITE IF TOGGLE TO DARK MODE*/
+
+/*For Navigator above*/
+.header, .navbar, .btn, #navbar-btn{ 
+    color: var(--text-color);    
+}
+/*For buttons*/
+.container, .buttons, .btn{
+    color: var(--text-color);
+}
+
+.card{
+    background-color: var(--darkcard);
+    color: var(--text-color);
+}
+body{
+    background-color: var(--base-color);
+    color: var(--text-color);
+}
+/*LAST LINE FOR DARKMODE*/
+.container{
+    display: grid;
+}
+#homepage{
+    border-radius: 20px;
+}
+.navbar .p-2{
+    text-decoration: none;
+    color: #000;
+}
+.footer{
+    margin-top: 100px;
+}
+.footer,#username,#copyright{
+    text-align: center;
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+#omellete{
+    width: 50rem;
+}
+
+.card, #img-fluid{
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.card-img{
+    max-width: 50rem;
+    height: 50rem;
+}
+i{
+    font-size: 20px;
+}
+
+.img-fluid{
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+
+}
+.card{
+    max-width: 50%;
+    z-index: 1;
+}
+
+.card, .col, .link{
+    font-size: 10px;
+}
+#username{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+}
+#spanYear{
+    
+    font-family: 'Courier New', Courier, monospace;
+    font-size: var(--font-small);
+}

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+ 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Registration Form</title>
+  <link href="../bootstrap-5.3.3-dist/css/bootstrap.css" rel="stylesheet">
+</head>
+ 
+ 
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col border rounded p-3 mt-3 mx-3">
+        <form id="registrationForm">
+          <div class="row mt-3">
+            <h3 class="text-success text-center fw-bold">Registration Form</h3>
+          </div>
+          <div class="row mt-3">
+            <div class="col-12 col-sm-4">
+              <label>First Name</label>
+              <input id="first_name" type="text" class="form-control" required />
+            </div>
+            <div class="col-12 col-sm-4">
+              <label>Middle Name</label>
+              <input id="middle_name" type="text" class="form-control" />
+            </div>
+            <div class="col-12 col-sm-4">
+              <label>Last Name</label>
+              <input id="last_name" type="text" class="form-control" required />
+            </div>
+          </div>
+          <div class="row mt-3">
+            <div class="col-12 col-sm-6">
+              <label>Address</label>
+              <input id="address" type="text" class="form-control" required />
+            </div>
+            <div class="col-12 col-sm-6">
+              <label>Birth Date</label>
+              <input id="birth_date" type="date" class="form-control" required />
+            </div>
+          </div>
+          <div class="row mt-3">
+            <div class="col-12 col-sm-12">
+              <label>Email</label>
+              <input id="email" type="email" class="form-control" required />
+            </div>
+          </div>
+          <div class="row mt-3">
+            <div class="col-12 col-sm-12">
+              <label>Password</label>
+              <input id="password" type="password" class="form-control" required />
+            </div>
+          </div>
+          <div class="row mt-3">
+            <div class="col-12 col-sm-12">
+              <label>Confirm Password</label>
+              <input id="confirm_password" type="password" class="form-control" required />
+            </div>
+          </div>
+          <div class="row mt-3">
+            <div class="col-12 col-sm-12">
+              <button type="submit" id="button_submit" class="btn btn-outline-success">Submit</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <script>
+    document.getElementById('registrationForm').addEventListener('submit', function (event) {
+      event.preventDefault();
+ 
+ 
+      const firstName = document.getElementById('first_name').value;
+      const middleName = document.getElementById('middle_name').value;
+      const lastName = document.getElementById('last_name').value;
+      const address = document.getElementById('address').value;
+      const birthDate = document.getElementById('birth_date').value;
+      const email = document.getElementById('email').value;
+      const password = document.getElementById('password').value;
+      const confirmPassword = document.getElementById('confirm_password').value;
+ 
+ 
+      alert(
+        `First Name: ${firstName}\n` +
+        `Middle Name: ${middleName}\n` +
+        `Last Name: ${lastName}\n` +
+        `Address: ${address}\n` +
+        `Birth Date: ${birthDate}\n` +
+        `Email: ${email}\n` +
+        `Password: ${password}\n` +
+        `Confirm Password: ${confirmPassword}`
+      );
+ 
+ 
+    });
+  </script>
+</body>
+ 
+ 
+</html>
