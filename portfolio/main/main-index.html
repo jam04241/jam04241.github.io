@@ -24,8 +24,8 @@
             </a>
           </div>
 
+          <div class="nav-link"><a id="navbar-btn" href="#projects">Projects</a></div>
           <div class="nav-link"><a id="navbar-btn" href="about-index.html">About</a></div>
-          <div class="nav-link"><a id="navbar-btn" href="main-index.html">Projects</a></div>
           <div class="nav-link"><a id="navbar-btn" href="contact-index.html">Contacts</a></div>
 
           <button id="theme-switch" class="p-2 grow-1">
@@ -44,14 +44,19 @@
               </div>
 
               <div class="paragraph2">
-                <h5>Currently at the University of Mindanao at the 
-                  College of Computing Education in 
-                  Bachelor of Science in Information Technology (BSIT).</h5>                 
-                <h5>A passionate Front-End Developer & PC builder.</h5>  
+                <h5>Currently a 2nd Year College Student at the University of Mindanao at the 
+                    College of Computing Education in 
+                    Bachelor of Science in Information Technology (BSIT).</h5> 
+                <br>                
+                <h5>A self-learn Front-End Developer & PC builder.</h5>
+                <br>
+                <h5>My goal is to expand my knowledge as a Front-End Developer, 
+                    stay updated on the latest trends in technology, 
+                    and remain passionate about PC building.</h5>    
               </div>
 
               <div class="buttons">
-                <a href="#" class="btn btn-primary">Projects</a>
+                <a href="#projects" class="btn btn-primary">Projects</a>
                 <a href="https://jam04241.github.io/" class="btn btn-primary">Socials</a>
               </div>           
         </div>
@@ -62,14 +67,18 @@
       </div>
     <!--    PROJECTS FROM GITHUB    -->
         <!--   CAR RENTAL SERVICES    -->
-    <div class="card mb-3 container d-flex align-items-center justify-content-center">
+    <div class="title-project align-items-center text-center">
+      <h1 id="projects">PROJECTS:</h1>
+    </div>
+
+    <div id="car-rental" class="card mb-3 container d-flex align-items-center justify-content-center">
         <div class="row g-0">
             <div class="col-md-4">
                 <img src="../image/carrental.png" class="img-fluid rounded-start" alt="...">
             </div>  
           <div class="col-md-8">
             <div class="card-body">
-              <h5 class="card-title">Car Rental Services website</h5>
+              <h3 class="card-title">Car Rental Services website</h3>
               <p class="card-text">A PHP website with MySQL, project from CCE104/L.</p>
               <p class="card-text">Programming Languange: <i class="fa-brands fa-php"></i> <i class="fa-brands fa-css3-alt"></i> <i class="fa-brands fa-js"></i> <i class="yawa fa-solid fa-database"></i> </p>
               <a href="C:\xampp\htdocs\webdev\CACA\Car_Rental(CCE104L_3239)\Html\MAIN_EXE" class="btn btn-primary">Visit website <i class="link fa-solid fa-arrow-up-right-from-square"></i></a>
@@ -83,7 +92,7 @@
             <div class="row g-0">
               <div class="col-md-8">
                 <div class="card-body">
-                  <h5 class="card-title">Ada Lovelace tribute website</h5>
+                  <h3 class="card-title">Ada Lovelace tribute website</h3>
                   <p class="card-text">Tribute page for Ada Lovelace to her legacy on how she known as "The first programmer".</p>
                   <p class="card-text">Programming Languange: <i class="fa-brands fa-html5"></i> <i class="fa-brands fa-css3-alt"></i> </p>
                   <a href="https://jam04241.github.io/Ada-Lovelace/" class="btn btn-primary">Visit website <i class="link fa-solid fa-arrow-up-right-from-square"></i></a>
@@ -96,14 +105,14 @@
           </div>
 
         <!--    Social Links    -->
-          <div class="card mb-3 container d-flex align-items-center justify-content-center">
+          <div id="social-link" class="card mb-3 container d-flex align-items-center justify-content-center">
             <div class="row g-0">
                 <div class="col-md-4">
                     <img src="../image/Social.png" class="img-fluid rounded-start" alt="...">
                 </div>  
               <div class="col-md-8">
                 <div class="card-body">
-                  <h5 class="card-title">My social link website</h5>
+                  <h3 class="card-title">My social link website</h3>
                   <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                   <p class="card-text">Programming Languange: <i class="fa-brands fa-html5"></i> <i class="fa-brands fa-css3-alt"></i> </p>
                   <a href="https://jam04241.github.io/" class="btn btn-primary">Visit website <i class="link fa-solid fa-arrow-up-right-from-square"></i></a>
@@ -117,7 +126,7 @@
             <div class="row g-0">
               <div class="col-md-8">
                 <div class="card-body">
-                  <h5 class="card-title">Recipe Omelette Website</h5>
+                  <h3 class="card-title">Recipe Omelette Website</h3>
                   <p class="card-text">The content of this website is all about the Recipe of Omelette with instructions, Challenge by frontend.</p>
                   <p class="card-text">Programming Languange: <i class="fa-brands fa-html5"></i> <i class="fa-brands fa-css3-alt"></i> </p>
                   <a href="https://jam04241.github.io/receipt_omelette/" class="btn btn-primary">Visit website <i class="link fa-solid fa-arrow-up-right-from-square"></i></a>
@@ -134,7 +143,8 @@
         <p id="username"><i class="fa-brands fa-square-github"></i> Jam04241</p>
         <p id="copyright">© <i id="spanYear"></i></p>
     </div>
-
+    
+    <!-- Script for DARKMODE -->
     <script type="text/javascript" src="main-script.js" defer></script>
 </body>
 </html>
