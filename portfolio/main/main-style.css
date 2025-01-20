@@ -1,4 +1,5 @@
 *{
+    font-family: "Inconsolata";
     box-sizing: border-box;
     font-size: 12px;
 }
@@ -11,6 +12,11 @@
     --primary-color: #3a435d;
     --accent-color: #0071ff;
     --font-small: 12px;
+
+    --chart-color: #ffffff;
+    --percent-color: #e63946;
+    --hover-color: #070b1d;
+     
 }
 .darkmode{
     --base-color: #070b1d;
@@ -21,6 +27,9 @@
     --accent-color: #0071ff;
     --darkcard: #16575c;
 
+    --chart-color:  #3a435d;
+    --percent-color: #ffcd56;
+    --hover-color: #3a435d;
 }
 /*FOR DARK MODE*/
 
@@ -69,13 +78,46 @@ body{
     background-color: var(--base-color);
     color: var(--text-color);
 }
+
+/* ABOUT-INDEX.HTML*/
+.chart-heading,.details{
+    color: var(--text-color);
+}
+.programming-stats{
+    background-color: var(--chart-color);
+}
+
+.programming-stats .details .percentage {
+    color: var(--percent-color);
+}
+.programming-stats:hover {
+    box-shadow: var(--hover-color);
+}
 /*LAST LINE FOR DARKMODE*/
 
+
+
+
+
+
+#name{
+    font-size: 50px;
+}
 .header,.navbar,.nav-link, #navbar-btn{
     text-decoration: none;
+    font-size: 20px;
 }
 .container{
     display: grid;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.description{
+    padding-right: 20px;
+}
+.Photoimg, .card-img{
+    border-radius: 10px;
+    height: 30rem;
 }
 #homepage{
     border-radius: 20px;
@@ -130,11 +172,53 @@ i{
 }
 
 #username{
-    font-family: 'Courier New', Courier, monospace;
+    font-family: "Inconsolata";
     font-size: 20px;
 }
 #spanYear{
-    
-    font-family: 'Courier New', Courier, monospace;
+    font-family: "Inconsolata";
     font-size: var(--font-small);
+}
+
+
+
+@media screen and (max-width: 768px){
+    #theme-switch{
+        height: 30px;
+        width: 30px;
+    }    
+    .container{
+        display: grid;
+        grid-column: auto;
+        }
+    .description{
+        margin-bottom: 20px;
+    }
+    .Photoimg, .card-img{
+        object-fit: cover;
+    }
+    .header,.navbar,.nav-link, #navbar-btn{
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 576px){
+    #theme-switch{
+        height: 28px;
+        width: 28px;
+    }    
+    .container{
+    display: grid;
+    padding-left: 50px;
+    padding-right: 50px;
+    }
+
+    .Photoimg, .card-img{
+        justify-self: center;
+        max-width: 70rem;
+    }
+
+    .header,.navbar,.nav-link, #navbar-btn{
+        font-size: 10px;
+    }
 }
