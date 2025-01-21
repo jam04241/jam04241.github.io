@@ -1,6 +1,6 @@
 const chartData = {
     labels: ["Html", "Css", "JavaScript","Java", "Python", "MySQL"],
-    data: [50, 50, 10, 25, 30, 40],
+    data: [25, 25, 10, 10, 10, 20],
   };
   
   const myChart = document.querySelector(".my-chart");
